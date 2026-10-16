@@ -39,6 +39,13 @@ Primary sources and practitioner notes for security and compliance frameworks.
 | [Security&nbsp;Hub](./AWS%20Security%20Hub/) | Security Hub CSPM's standards and the newer Security Hub's risk correlation |
 | [GovCloud](./AWS%20GovCloud/) | AWS's isolated Regions for regulated workloads, and when you actually need them |
 
+## GitHub Automation
+
+| Automation | Covers |
+|---|---|
+| [Link&nbsp;Checking](./GitHub%20Link%20Checking/) | Scheduled and pull request checks for broken links |
+| [Branch&nbsp;Protection](./GitHub%20Branch%20Protection/) | Rulesets requiring pull requests and passing checks before merging |
+
 
 ## Disclaimer
 
