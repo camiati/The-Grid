@@ -35,6 +35,7 @@ Primary sources and practitioner notes for security and compliance frameworks.
 | [Well&#8209;Architected:&nbsp;Operational&nbsp;Excellence](./AWS%20Well-Architected%20Operational%20Excellence/) | AWS's operations pillar, from a change management and incident evidence angle |
 | [CIS&nbsp;AWS&nbsp;Foundations&nbsp;Benchmark](./CIS%20AWS%20Foundations%20Benchmark/) | CIS's configuration baseline for AWS accounts, and how it's scanned |
 | [Security&nbsp;Hub](./AWS%20Security%20Hub/) | Security Hub CSPM's standards and the newer Security Hub's risk correlation |
+| [GovCloud](./AWS%20GovCloud/) | AWS's isolated Regions for regulated workloads, and when you actually need them |
 
 
 ## Disclaimer
