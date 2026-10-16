@@ -1,8 +1,18 @@
 # CMMC
 
-Cybersecurity Maturity Model Certification. DoD's program for verifying that contractors protect FCI and CUI. Program rules are in 32 CFR Part 170; contract requirements come through DFARS 252.204-7021, phased into new solicitations starting November 10, 2025.
+Cybersecurity Maturity Model Certification. DoD's program for verifying that contractors protect FCI and CUI. Program rules are in 32 CFR Part 170; contract requirements come through DFARS 252.204-7021. Phase 1 began November 10, 2025.
 
-*Links verified October 2026.*
+## Current status (October 2026)
+
+On July 13, 2026, the Department of War (DoD) suspended CMMC Phase 2, which would have made Level 2 (C3PAO) assessments the default in applicable contracts starting November 10, 2026. Later phases are on hold while a CMMC Reform Task Force reviews the program.
+
+| Item | Status |
+|---|---|
+| Phase&nbsp;1&nbsp;self&#8209;assessments | In effect. Level 1 and Level 2 (Self) requirements still appear in solicitations; scores and affirmations go in SPRS |
+| Phase&nbsp;2&nbsp;and&nbsp;later | Suspended. Contracting officers are removing C3PAO and DIBCAC requirements from solicitations and existing contracts |
+| DFARS&nbsp;7012&nbsp;and&nbsp;NIST&nbsp;SP&nbsp;800&#8209;171 | Unchanged |
+| C3PAO&nbsp;assessments | Still being conducted; primes may require them independently |
+| Reform&nbsp;Task&nbsp;Force | Report delivered to the DoW CIO in September 2026; not yet public |
 
 ## Start here
 
@@ -53,23 +63,38 @@ Cybersecurity Maturity Model Certification. DoD's program for verifying that con
 
 **It's Rev. 2, not Rev. 3.** CMMC Level 2 assesses against SP 800-171 Rev. 2.
 
-**800-171A shows as withdrawn on NIST's site.** It still applies. 32 CFR 170 incorporates the June 2018 version by reference.
+**800-171A shows as withdrawn on NIST's site.** 
+- It still applies. 32 CFR 170 incorporates the June 2018 version by reference.
 
-**Assessors test objectives.** The 110 requirements break into about 320 objectives. A requirement is MET only when all its objectives are.
+**Assessors test objectives.**
+- The 110 requirements break into about 320 objectives.
+- A requirement is MET only when all its objectives are.
 
-**Security tools and providers are in scope.** SIEM, EDR, identity, and MSPs are typically Security Protection Assets. Get a customer responsibility matrix from each provider.
+**Security tools and providers are in scope.**
+- SIEM, EDR, identity, and MSPs are typically Security Protection Assets.
+- Get a customer responsibility matrix from each provider.
 
-**Cloud has its own bar.** A cloud provider handling CUI must meet FedRAMP Moderate or equivalent under 7012. DoD's December 2023 equivalency memo makes "equivalent" hard to meet.
+**Cloud has its own bar.**
+- A cloud provider handling CUI must meet FedRAMP Moderate or equivalent under 7012.
+- DoD's December 2023 equivalency memo makes "equivalent" hard to meet.
 
-**POA&Ms are narrow.** §170.21 limits which requirements qualify, sets a minimum score, and requires closeout within 180 days.
+**POA&Ms are narrow.** 
+- §170.21 limits which requirements qualify, sets a minimum score, and requires closeout within 180 days.
 
-**The affirmation is personal.** §170.22 requires a senior official to affirm compliance at assessment and annually. A false affirmation carries False Claims Act exposure.
+**The affirmation is personal.** 
+- §170.22 requires a senior official to affirm compliance at assessment and annually.
+- A false affirmation carries False Claims Act exposure.
 
-**Freeze your evidence.** Keep a versioned copy of exactly what the assessor saw.
+**Freeze your evidence.** 
+- Keep a versioned copy of exactly what the assessor saw.
 
-**Products aren't "CMMC certified."** Organizations get CMMC status. Tools don't.
+**Products aren't "CMMC certified."** 
+- Organizations get CMMC status. Tools don't.
 
-**Know whether you have FCI, CUI, or both.** Level 1 covers FCI under FAR 52.204-21. Over-scoping by assuming everything is CUI is common. Check the CUI Registry and your contract clauses.
+**Know whether you have FCI, CUI, or both.** 
+- Level 1 covers FCI under FAR 52.204-21.
+- Over-scoping by assuming everything is CUI is common.
+- Check the CUI Registry and your contract clauses.
 
 ## Templates
 
