@@ -14,13 +14,12 @@ Protecting Controlled Unclassified Information in Nonfederal Systems and Organiz
 
 | Resource | Purpose |
 |---|---|
-| [SP 800-171 Rev. 2](https://csrc.nist.gov/pubs/sp/800/171/r2/upd1/final) | The 110 requirements. Also hosts the CUI SSP template and CSV/XLSX versions. |
-| [SP 800-171A (June 2018)](https://csrc.nist.gov/pubs/sp/800/171/a/final) | Assessment objectives for Rev. 2 |
-| [NIST SP 800-171 DoD Assessment Methodology](https://www.acq.osd.mil/asda/dpc/cp/cyber/docs/safeguarding/NIST-SP-800-171-Assessment-Methodology-Version-1.2.1-6.24.2020.pdf) | How DoD scores Rev. 2 for SPRS |
-| [SP 800-171 Rev. 3](https://csrc.nist.gov/pubs/sp/800/171/r3/final) | The current NIST revision |
-| [SP 800-172](https://csrc.nist.gov/pubs/sp/800/172/final) | Enhanced requirements against advanced persistent threats; the basis for CMMC Level 3 |
-| [NIST CUI project page](https://csrc.nist.gov/Projects/protecting-controlled-unclassified-information) | All CUI series publications, Rev. 2 to Rev. 3 change analysis, FAQs |
-
+| [SP&nbsp;800‑171&nbsp;Rev.&nbsp;2](https://csrc.nist.gov/pubs/sp/800/171/r2/upd1/final) | The 110 requirements. Also hosts the CUI SSP template and CSV/XLSX versions. |
+| [SP&nbsp;800‑171A&nbsp;(June&nbsp;2018)](https://csrc.nist.gov/pubs/sp/800/171/a/final) | Assessment objectives for Rev. 2 |
+| [DoD&nbsp;Assessment&nbsp;Methodology](https://www.acq.osd.mil/asda/dpc/cp/cyber/docs/safeguarding/NIST-SP-800-171-Assessment-Methodology-Version-1.2.1-6.24.2020.pdf) | How DoD scores Rev. 2 for SPRS |
+| [SP&nbsp;800‑171&nbsp;Rev.&nbsp;3](https://csrc.nist.gov/pubs/sp/800/171/r3/final) | The current NIST revision |
+| [SP&nbsp;800‑172](https://csrc.nist.gov/pubs/sp/800/172/final) | Enhanced requirements against advanced persistent threats; the basis for CMMC Level 3 |
+| [NIST&nbsp;CUI&nbsp;project&nbsp;page](https://csrc.nist.gov/Projects/protecting-controlled-unclassified-information) | All CUI series publications, Rev. 2 to Rev. 3 change analysis, FAQs |
 ## Practitioner notes
 
 **NIST shows Rev. 2 as superseded.**
