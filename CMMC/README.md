@@ -16,7 +16,7 @@ On July 13, 2026, the Department of War (DoD) suspended CMMC Phase 2, which woul
 
 ## Start here
 
-- [CMMC Level Determination brief](https://dodcio.defense.gov/Portals/0/Documents/CMMC/CMMC-LevelsDeterminationBrief_v2.pdf): how a contract's CMMC level is chosen
+- [CMMC Level Determination brief](https://dodcio.defense.gov/cmmc/Resources-Documentation/): how a contract's CMMC level is chosen (on the DoD CIO resources page)
 - [Scoping Guide – Level 2](https://dodcio.defense.gov/Portals/0/Documents/CMMC/ScopingGuideL2.pdf): what's in and out of the assessment boundary
 - [Assessment Guide – Level 2](https://dodcio.defense.gov/Portals/0/Documents/CMMC/AssessmentGuideL2.pdf): requirement-by-requirement assessment guidance
 - [32 CFR Part 170](https://www.ecfr.gov/current/title-32/subtitle-A/chapter-I/subchapter-G/part-170): the regulation, especially §170.19 (scoping), §170.21 (POA&Ms), §170.22 (affirmations), §170.24 (scoring)
