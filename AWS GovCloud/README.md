@@ -1,8 +1,7 @@
 # AWS GovCloud (US)
 
-Isolated AWS Regions (US-West and US-East) for regulated workloads. Administered only by AWS personnel who are U.S. citizens, with accounts limited to vetted U.S. persons.
-
-*Links verified October 2026.*
+- Isolated AWS Regions (US-West and US-East) for regulated workloads.
+- Administered only by AWS personnel who are U.S. citizens, with accounts limited to vetted U.S. persons.
 
 ## GovCloud vs. commercial US Regions
 
