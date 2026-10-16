@@ -30,7 +30,7 @@ The executive branch program for Controlled Unclassified Information (CUI)
 |---|---|
 | [32&nbsp;CFR&nbsp;Part&nbsp;2002](https://www.ecfr.gov/current/title-32/subtitle-B/chapter-XX/part-2002) | The CUI program regulation |
 | [CUI&nbsp;Registry](https://www.archives.gov/cui/registry/category-list.html) | Official category list |
-| [CUI&nbsp;Marking&nbsp;Handbook](https://www.archives.gov/files/cui/20161206-cui-marking-handbook-v1-1.pdf) | NARA's marking examples |
+| [NARA&nbsp;CUI&nbsp;guidance](https://www.archives.gov/guidance/cui-guidance) | The Marking Handbook and all CUI Notices, with dates |
 | [NARA&nbsp;CUI&nbsp;tools](https://www.archives.gov/cui/additional-tools) | Additional marking and implementation resources |
 | [NARA&nbsp;CUI&nbsp;training](https://www.archives.gov/cui/training.html) | Free training videos |
 | [ISOO&nbsp;marking&nbsp;examples](https://isoo.blogs.archives.gov/category/marking-examples/) | Worked marking examples from NARA's oversight office |
