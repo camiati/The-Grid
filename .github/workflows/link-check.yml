@@ -4,6 +4,7 @@ on:
   schedule:
     - cron: "0 13 1 * *"   # 1st of every month, 13:00 UTC
   workflow_dispatch:         # adds a "Run workflow" button in the Actions tab
+  pull_request:              # runs on every pull request, as a required check
 
 permissions:
   contents: read
@@ -29,8 +30,14 @@ jobs:
             --exclude 'acq\.osd\.mil'
             './**/*.md'
 
-      - name: Open an issue if links are broken
-        if: steps.lychee.outputs.exit_code != 0
+      - name: Open an issue if links are broken (scheduled and manual runs)
+        if: steps.lychee.outputs.exit_code != 0 && github.event_name != 'pull_request'
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh issue create --title "Broken links found $(date +%Y-%m-%d)" --body-file ./lychee/out.md
+
+      - name: Fail the check if links are broken (pull requests)
+        if: steps.lychee.outputs.exit_code != 0 && github.event_name == 'pull_request'
+        run: |
+          echo "Broken links found. See the job summary for details."
+          exit 1
