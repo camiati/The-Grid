@@ -8,11 +8,11 @@ Defense Federal Acquisition Regulation Supplement (DFARS)
 
 | Clause | What it requires |
 |---|---|
-| [252.204-7012](https://www.acquisition.gov/dfars/252.204-7012-safeguarding-covered-defense-information-and-cyber-incident-reporting.) | Implement NIST SP 800-171 on systems with covered defense information, report cyber incidents within 72 hours, preserve evidence, meet cloud requirements, flow down to subs |
-| [252.204-7019](https://www.ecfr.gov/current/title-48/chapter-2/subchapter-H/part-252/subpart-252.2/section-252.204-7019) | Solicitation notice: offerors need a current (under 3 years) NIST SP 800-171 DoD Assessment score in SPRS to be considered for award |
-| [252.204-7020](https://acquisition.gov/dfars/252.204-7020-nist-sp-800-171-dod-assessment-requirements.) | Contract clause: defines Basic, Medium, and High assessments, requires access for DoD assessments, flows down to subs |
-| [252.204-7021](https://www.acquisition.gov/dfars/252.204-7021-contractor-compliance-cybersecurity-maturity-model-certification-level-requirements.) | Maintain the CMMC status required by the contract, affirm continuing compliance, flow down to subs |
-| [252.239-7010](https://www.acquisition.gov/dfars/252.239-7010-cloud-computing-services.) | Applies when you provide cloud services to DoD, not when you use cloud internally |
+| [252.204‑7012](https://www.acquisition.gov/dfars/252.204-7012-safeguarding-covered-defense-information-and-cyber-incident-reporting.) | Implement NIST SP 800-171 on systems with covered defense information, report cyber incidents within 72 hours, preserve evidence, meet cloud requirements, flow down to subs |
+| [252.204‑7019](https://www.ecfr.gov/current/title-48/chapter-2/subchapter-H/part-252/subpart-252.2/section-252.204-7019) | Solicitation notice: offerors need a current (under 3 years) NIST SP 800-171 DoD Assessment score in SPRS to be considered for award |
+| [252.204‑7020](https://acquisition.gov/dfars/252.204-7020-nist-sp-800-171-dod-assessment-requirements.) | Contract clause: defines Basic, Medium, and High assessments, requires access for DoD assessments, flows down to subs |
+| [252.204‑7021](https://www.acquisition.gov/dfars/252.204-7021-contractor-compliance-cybersecurity-maturity-model-certification-level-requirements.) | Maintain the CMMC status required by the contract, affirm continuing compliance, flow down to subs |
+| [252.239‑7010](https://www.acquisition.gov/dfars/252.239-7010-cloud-computing-services.) | Applies when you provide cloud services to DoD, not when you use cloud internally |
 
 ### Policy and guidance
 
