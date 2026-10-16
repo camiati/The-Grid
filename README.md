@@ -6,7 +6,8 @@ Primary sources and practitioner notes for security and compliance frameworks.
 
 | Framework | Covers |
 |---|---|
-| [CMMC](./cmmc/) | DoD's program for verifying contractor protection of FCI and CUI |
+| [CMMC](./CMMC/) | DoD's program for verifying contractor protection of FCI and CUI |
+| [DFARS](./DFARS/) | DoD contract clauses for safeguarding, assessment, incident reporting, and cloud |
 
 Links are verified as of the date noted in each section.
 
