@@ -2,6 +2,12 @@
 
 Primary sources and practitioner notes for security and compliance frameworks.
 
+## Commercial assurance
+
+| Framework | Covers |
+|---|---|
+| [SOC&nbsp;2](./SOC%202/) | AICPA attestation on a service organization's security controls |
+
 ## Defense industrial base
 
 | Framework | Covers |
@@ -17,11 +23,11 @@ Primary sources and practitioner notes for security and compliance frameworks.
 | [FedRAMP&nbsp;Rev5](./FedRAMP%20Rev5/) | The legacy FedRAMP path, built on NIST SP 800-53 baselines |
 | [FedRAMP&nbsp;20x](./FedRAMP%2020x/) | The new FedRAMP path, built on Key Security Indicators and automated evidence |
 
-## Commercial assurance
+## AWS
 
 | Framework | Covers |
 |---|---|
-| [SOC&nbsp;2](./SOC%202/) | AICPA attestation on a service organization's security controls |
+| [Well&#8209;Architected:&nbsp;Security](./AWS%20Well-Architected%20Security/) | AWS's security pillar, reference architecture, and shared responsibility model |
 
 Links are verified as of the date noted in each section.
 
