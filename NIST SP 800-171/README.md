@@ -7,9 +7,8 @@ Protecting Controlled Unclassified Information in Nonfederal Systems and Organiz
 
 | Revision | Status |
 |---|---|
-| Rev. 2 (Feb 2020) | **Required for DoD contracts.** 110 requirements, 14 families. DoD Class Deviation 2024-O0013 pins 7012 to Rev. 2, and 32 CFR 170 incorporates it for CMMC. |
-| Rev. 3 (May 2024) | Current NIST version. 97 requirements, 17 families, aligned to SP 800-53 Rev. 5. Not yet required by DoD. |
-
+| Rev.&nbsp;2&nbsp;(Feb&nbsp;2020) | **Required for DoD contracts.** 110 requirements, 14 families. DoD Class Deviation 2024-O0013 pins 7012 to Rev. 2, and 32 CFR 170 incorporates it for CMMC. |
+| Rev.&nbsp;3&nbsp;(May&nbsp;2024) | Current NIST version. 97 requirements, 17 families, aligned to SP 800-53 Rev. 5. Not yet required by DoD. |
 ## Primary sources
 
 | Resource | Purpose |
