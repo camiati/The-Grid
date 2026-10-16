@@ -34,22 +34,43 @@ Defense Federal Acquisition Regulation Supplement (DFARS)
 
 ## Practitioner notes
 
-**7012 applies without CMMC.** If your contract has 7012 and you handle covered defense information, you owe NIST SP 800-171, incident reporting, and SPRS scoring today. CMMC verifies 7012; it doesn't replace it.
+**Clause numbers changed in February 2026.** 
+- The Revolutionary FAR Overhaul moved cybersecurity clauses into FAR Part 40 and DFARS Part 240 through class deviations.
+- The codified regulations still show the old numbers, so contracts may cite either. Check which yours uses.
 
-**Read the clause date in your contract.** Clauses get revised (7012 is MAY 2024, 7021 is NOV 2025). The version in your contract governs.
+**7012 applies without CMMC.** 
+- If your contract has 7012 and you handle covered defense information, you owe NIST SP 800-171, incident reporting, and SPRS scoring today.
+- CMMC verifies 7012; it doesn't replace it.
 
-**Your SPRS score is a representation.** A Basic Assessment is self-scored from 110 down, and can go negative. Submitting it is a statement to the government, with the same False Claims Act exposure as a CMMC affirmation.
+**Read the clause date in your contract.** 
+- Clauses get revised (7012 is MAY 2024, 7021 is NOV 2025).
+- The version in your contract governs.
 
-**DIBNet is gone.** DoD retired the DIBNet portal in June 2025. Reports now go through DC3 DCISE. Older incident response plans that point to dibnet.dod.mil need updating.
+**Your SPRS score is a representation.** 
+- A Basic Assessment is self-scored from 110 down, and can go negative.
+- Submitting it is a statement to the government, with the same False Claims Act exposure as a CMMC affirmation.
 
-**Get the medium assurance certificate before you need it.** You can't submit a report without one, and the 72-hour clock doesn't pause while you buy one.
+**DIBNet is gone.** 
+- DoD retired the DIBNet portal in June 2025.
+- Reports now go through DC3 DCISE. Older incident response plans that point to dibnet.dod.mil need updating.
 
-**The 72-hour clock starts at discovery,** not when you finish investigating. Report what you know and update later.
+**Get the medium assurance certificate before you need it.** 
+- You can't submit a report without one, and the 72-hour clock doesn't pause while you buy one.
 
-**Preserve images for 90 days.** 7012 requires keeping images of affected systems and relevant monitoring data for at least 90 days after reporting.
+**The 72-hour clock starts at discovery,** 
+- not when you finish investigating.
+- Report what you know and update later.
 
-**Subcontractors report directly to DoD,** then give the incident number to the prime.
+**Preserve images for 90 days.** 
+- 7012 requires keeping images of affected systems and relevant monitoring data for at least 90 days after reporting.
 
-**"FedRAMP Moderate equivalent" is a high bar.** The December 2023 memo requires 100% of the Moderate baseline, assessed by a FedRAMP-recognized 3PAO. A SOC 2 report doesn't get you there.
+**Subcontractors report directly to DoD,** 
+- then give the incident number to the prime.
 
-**7012 cloud and 239-7010 cloud are different problems.** 7012 governs cloud you use to store CUI. 239-7010 governs cloud you operate for DoD, and brings in DoD's Cloud Computing Security Requirements Guide.
+**"FedRAMP Moderate equivalent" is a high bar.** 
+- The December 2023 memo requires 100% of the Moderate baseline, assessed by a FedRAMP-recognized 3PAO.
+- A SOC 2 report doesn't get you there.
+
+**7012 cloud and 239-7010 cloud are different problems.** 
+- 7012 governs cloud you use to store CUI.
+- 239-7010 governs cloud you operate for DoD, and brings in DoD's Cloud Computing Security Requirements Guide.
