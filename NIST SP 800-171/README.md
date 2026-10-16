@@ -15,7 +15,7 @@ Protecting Controlled Unclassified Information in Nonfederal Systems and Organiz
 |---|---|
 | [SP&nbsp;800‑171&nbsp;Rev.&nbsp;2](https://csrc.nist.gov/pubs/sp/800/171/r2/upd1/final) | The 110 requirements. Also hosts the CUI SSP template and CSV/XLSX versions. |
 | [SP&nbsp;800‑171A&nbsp;(June&nbsp;2018)](https://csrc.nist.gov/pubs/sp/800/171/a/final) | Assessment objectives for Rev. 2 |
-| [DoD&nbsp;Assessment&nbsp;Methodology](https://www.acq.osd.mil/asda/dpc/cp/cyber/docs/safeguarding/NIST-SP-800-171-Assessment-Methodology-Version-1.2.1-6.24.2020.pdf) | How DoD scores Rev. 2 for SPRS |
+| [DoD&nbsp;Assessment&nbsp;Methodology](https://www.acq.osd.mil/asda/dpc/cp/cyber/docs/safeguarding/NIST-SP-800-171-Assessment-Methodology-Version-1.2.1-6.24.2020.pdf) | Legacy SPRS scoring method; CMMC self-assessments now score under 32 CFR 170.24 |
 | [SP&nbsp;800‑171&nbsp;Rev.&nbsp;3](https://csrc.nist.gov/pubs/sp/800/171/r3/final) | The current NIST revision |
 | [SP&nbsp;800‑172](https://csrc.nist.gov/pubs/sp/800/172/final) | Enhanced requirements against advanced persistent threats; the basis for CMMC Level 3 |
 | [NIST&nbsp;CUI&nbsp;project&nbsp;page](https://csrc.nist.gov/Projects/protecting-controlled-unclassified-information) | All CUI series publications, Rev. 2 to Rev. 3 change analysis, FAQs |
