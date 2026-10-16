@@ -32,14 +32,22 @@ A GitHub ruleset that stops direct commits to the main branch. Every change goes
 
 ## Practitioner notes
 
-**Free on public repos.** Rulesets are available on public repositories with GitHub Free.
+**Free on public repos.**
+- Rulesets are available on public repositories with GitHub Free.
 
-**Solo repos need 0 approvals.** GitHub won't let you approve your own pull request, so requiring 1 locks you out. In a team, require at least one approval from someone other than the author.
+**Solo repos need 0 approvals.**
+- GitHub won't let you approve your own pull request, so requiring 1 locks you out.
+- In a team, require at least one approval from someone other than the author.
 
-**Required checks must run on pull requests.** A workflow that only runs on a schedule never reports on a pull request, so the merge waits forever. Add a `pull_request` trigger.
+**Required checks must run on pull requests.**
+- A workflow that only runs on a schedule never reports on a pull request, so the merge waits forever. Add a `pull_request` trigger.
 
-**Avoid path filters on required checks.** If the workflow only runs when certain files change, pull requests that don't touch those files will never get the check and can't merge.
+**Avoid path filters on required checks.**
+- If the workflow only runs when certain files change, pull requests that don't touch those files will never get the check and can't merge.
 
-**A check appears in the picker only after it has run.** Run the workflow once before adding it to the ruleset.
+**A check appears in the picker only after it has run.**
+- Run the workflow once before adding it to the ruleset.
 
-**Control mapping:** change management (SOC 2 CC8.1; NIST SP 800-171 3.4.3, tracking, reviewing, and approving changes). A solo repo shows the process but not separation of duties; a team setup adds required reviewers.
+**Control mapping:**
+- change management (SOC 2 CC8.1; NIST SP 800-171 3.4.3, tracking, reviewing, and approving changes).
+- A solo repo shows the process but not separation of duties; a team setup adds required reviewers.
