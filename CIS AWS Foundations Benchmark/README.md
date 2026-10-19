@@ -2,6 +2,8 @@
 
 The Center for Internet Security's consensus-based configuration baseline for AWS accounts. It covers account-level settings across identity, storage, logging, monitoring, and networking.
 
+*Last reviewed October 2026.*
+
 ## Versions
 
 | Item | Version |

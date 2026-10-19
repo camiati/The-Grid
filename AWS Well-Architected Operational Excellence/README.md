@@ -2,7 +2,7 @@
 
 AWS's guidance for running and improving workloads. Not a security pillar, but its change management, runbook, and incident practices produce much of the evidence auditors ask for.
 
-*Links verified October 2026.*
+*Last reviewed October 2026.*
 
 ## Design principles
 

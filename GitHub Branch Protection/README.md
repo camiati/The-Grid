@@ -2,7 +2,7 @@
 
 A GitHub ruleset that stops direct commits to the main branch. Every change goes through a pull request and must pass automated checks before it merges. This repo runs it.
 
-*Links verified October 2026.*
+*Last reviewed October 2026.*
 
 ## Rules
 

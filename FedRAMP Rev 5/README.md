@@ -3,6 +3,8 @@
 The legacy FedRAMP path: NIST SP 800-53 Rev. 5 baselines, a narrative security package, a third-party assessment, and usually an agency sponsor. 
 Still active, and still the path DoD accepts for cloud services handling CUI.
 
+*Last reviewed October 2026.*
+
 ## Status
 
 | Item | Detail |

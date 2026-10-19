@@ -5,6 +5,8 @@ The executive branch program for Controlled Unclassified Information (CUI)
 - The National Archives (NARA) is the Executive Agent.
 - DFARS 7012, NIST SP 800-171, and CMMC all exist to protect what this program defines.
 
+*Last reviewed October 2026.*
+
 ## Key concepts
 
 | Term | Meaning |

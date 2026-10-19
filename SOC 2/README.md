@@ -3,6 +3,8 @@
 An attestation report from an independent CPA firm on a service organization's controls, evaluated against the AICPA Trust Services Criteria.
 The common way SaaS and service providers show customers their security posture.
 
+*Last reviewed October 2026.*
+
 ## Primary sources
 
 The AICPA publishes both documents for free, but requires a free account to download.
