@@ -2,6 +2,8 @@
 
 The new FedRAMP path. Providers demonstrate security outcomes through Key Security Indicators, backed by automated, machine-readable evidence, in place of control-by-control narratives.
 
+*Last reviewed October 2026.*
+
 ## Status
 
 | Item | Detail |

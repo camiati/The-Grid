@@ -3,7 +3,7 @@
 Controls that protect a repo from compromised third-party actions and leaked credentials:
 - pinning actions to exact commits, enforcing that pinning, delaying new releases, and scanning for secrets. This repo runs all of them.
 
-*Links verified October 2026.*
+*Last reviewed October 2026.*
 
 ## Controls
 

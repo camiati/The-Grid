@@ -2,6 +2,8 @@
 
 AWS's guidance for designing and operating secure workloads. It's one of six pillars in the AWS Well-Architected Framework: guidance, not an auditable standard.
 
+*Last reviewed October 2026.*
+
 ## Design principles
 
 | Principle | In practice |

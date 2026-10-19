@@ -4,7 +4,7 @@ GitHub's built-in tool for keeping dependencies current.
 Here it watches the actions used in this repo's workflows and opens a pull request when a new version is released. 
 Those pull requests go through branch protection and the required checks like any other change.
 
-*Links verified October 2026.*
+*Last reviewed October 2026.*
 
 ## How it works
 

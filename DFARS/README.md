@@ -4,6 +4,8 @@ Defense Federal Acquisition Regulation Supplement (DFARS)
 - clauses that put cybersecurity requirements into DoD contracts
 - 252.204-7012 is the foundation; the others add assessment, reporting, certification, and cloud requirements on top of it.
 
+*Last reviewed October 2026.*
+
 ## The clauses
 
 | Clause | What it requires |

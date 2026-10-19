@@ -2,7 +2,7 @@
 
 A GitHub Actions workflow that checks external links in a repo's Markdown files. It runs a full check monthly and opens an issue when links break, and it checks only the changed files on pull requests, blocking merges that add broken links. This repo runs it.
 
-*Links verified October 2026.*
+*Last reviewed October 2026.*
 
 ## How it works
 

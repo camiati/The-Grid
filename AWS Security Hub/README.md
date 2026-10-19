@@ -2,7 +2,7 @@
 
 AWS's service for checking configuration against security standards and bringing security findings into one place. As of 2025 it's two related services with nearly the same name.
 
-*Links verified October 2026.*
+*Last reviewed October 2026.*
 
 ## Two services, one name
 

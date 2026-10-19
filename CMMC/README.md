@@ -2,6 +2,8 @@
 
 Cybersecurity Maturity Model Certification. DoD's program for verifying that contractors protect FCI and CUI. Program rules are in 32 CFR Part 170; contract requirements come through DFARS 252.204-7021. Phase 1 began November 10, 2025.
 
+*Last reviewed October 2026.*
+
 ## Current status (October 2026)
 
 On July 13, 2026, the Department of War (DoD) suspended CMMC Phase 2, which would have made Level 2 (C3PAO) assessments the default in applicable contracts starting November 10, 2026. Later phases are on hold while a CMMC Reform Task Force reviews the program.

@@ -3,6 +3,8 @@
 Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations
 - The security requirements contractors implement under DFARS 252.204-7012, and the standard CMMC Level 2 assesses against.
 
+*Last reviewed October 2026.*
+
 ## Which revision applies
 
 | Revision | Status |

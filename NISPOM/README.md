@@ -4,6 +4,8 @@ The National Industrial Security Program Operating Manual (NISPOM)
 - codified at 32 CFR Part 117.
 - The rules cleared contractors follow to protect classified information, overseen for DoD by the Defense Counterintelligence and Security Agency (DCSA).
 
+*Last reviewed October 2026.*
+
 ## Key sections
 
 | Section | Covers |
