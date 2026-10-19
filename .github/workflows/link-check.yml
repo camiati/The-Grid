@@ -1,3 +1,13 @@
+# Link checker for The Grid
+#
+# Scheduled and manual runs check every link in every Markdown file,
+# and open an issue if anything is broken.
+#
+# Pull requests check only the links in Markdown files that the pull
+# request changed, and fail the check if anything is broken. This keeps
+# request volume low while still blocking new broken links. Pull requests
+# that change no Markdown files pass without checking anything.
+
 name: Check links
 
 on:
@@ -15,9 +25,47 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0   # full history, so a pull request can be compared to main
+
+      # Decide what to check: everything (scheduled/manual) or only the
+      # Markdown files this pull request changed.
+      - name: Choose files to check
+        id: files
+        env:
+          EVENT: ${{ github.event_name }}
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          if [ "$EVENT" != "pull_request" ]; then
+            echo "targets='./**/*.md'" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          files=$(git diff --name-only --diff-filter=d "origin/$BASE_REF...HEAD" -- '*.md')
+
+          if [ -z "$files" ]; then
+            echo "No Markdown files changed. Nothing to check."
+            exit 0
+          fi
+
+          # Safety: only allow simple file names, since they're passed to the
+          # link checker as arguments. Blocks crafted names in outside pull requests.
+          if echo "$files" | grep -qvE '^[A-Za-z0-9 ./_-]+$'; then
+            echo "Unexpected characters in a changed file name. Stopping."
+            exit 1
+          fi
+
+          targets=""
+          while IFS= read -r f; do
+            targets="$targets '$f'"
+          done <<< "$files"
+
+          echo "Checking: $targets"
+          echo "targets=$targets" >> "$GITHUB_OUTPUT"
 
       - name: Check links
         id: lychee
+        if: steps.files.outputs.targets != ''
         uses: lycheeverse/lychee-action@v2
         with:
           fail: false
@@ -28,16 +76,16 @@ jobs:
             --max-concurrency 4
             --max-retries 2
             --exclude 'acq\.osd\.mil'
-            './**/*.md'
+            ${{ steps.files.outputs.targets }}
 
       - name: Open an issue if links are broken (scheduled and manual runs)
-        if: steps.lychee.outputs.exit_code != 0 && github.event_name != 'pull_request'
+        if: steps.files.outputs.targets != '' && steps.lychee.outputs.exit_code != 0 && github.event_name != 'pull_request'
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh issue create --title "Broken links found $(date +%Y-%m-%d)" --body-file ./lychee/out.md
 
       - name: Fail the check if links are broken (pull requests)
-        if: steps.lychee.outputs.exit_code != 0 && github.event_name == 'pull_request'
+        if: steps.files.outputs.targets != '' && steps.lychee.outputs.exit_code != 0 && github.event_name == 'pull_request'
         run: |
           echo "Broken links found. See the job summary for details."
           exit 1
