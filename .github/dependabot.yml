@@ -17,3 +17,5 @@ updates:
           - "*"
     commit-message:
       prefix: "deps"
+    cooldown:
+      default-days: 7    # wait a week after a release before proposing it

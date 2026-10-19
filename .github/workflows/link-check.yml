@@ -7,6 +7,10 @@
 # request changed, and fail the check if anything is broken. This keeps
 # request volume low while still blocking new broken links. Pull requests
 # that change no Markdown files pass without checking anything.
+#
+# Actions are pinned to exact commit SHAs, with the version in a comment.
+# A tag like @v7 can be moved by the action's owner; a SHA can't.
+# Dependabot updates both the SHA and the comment.
 
 name: Check links
 
@@ -24,7 +28,7 @@ jobs:
   check-links:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0   # full history, so a pull request can be compared to main
 
@@ -66,7 +70,7 @@ jobs:
       - name: Check links
         id: lychee
         if: steps.files.outputs.targets != ''
-        uses: lycheeverse/lychee-action@v2
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
         with:
           fail: false
           args: >-
