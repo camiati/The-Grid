@@ -28,6 +28,7 @@ No other setup is needed; Dependabot reads the file once it's on the default bra
 | `interval: "monthly"` | Matches the repo's other monthly automation |
 | `groups` | Bundles all action updates into a single pull request instead of one per action |
 | `commit-message: prefix` | Makes Dependabot's commits easy to spot in history |
+| `cooldown: default-days: 7` | Waits a week after a release before proposing it, avoiding freshly compromised releases |
 
 ## Primary sources
 
@@ -37,9 +38,9 @@ No other setup is needed; Dependabot reads the file once it's on the default bra
 
 ## Practitioner notes
 
-**Version tags limit what Dependabot sees.** 
-- Actions referenced by a major tag like `@v2` already float to the newest `v2.x` release, so Dependabot only opens a pull request for a new major version.
-- Pinning actions to exact commits gives tighter control, and Dependabot then updates those pins.
+**Pinned SHAs keep Dependabot active.**
+- Actions referenced by a major tag like `@v2` float silently to new minor releases, so Dependabot only proposes major versions.
+- This repo pins actions to exact commit SHAs, so Dependabot proposes every update for review. See the Supply Chain Hardening page.
 
 **Read the release notes before merging.**
 - A major version can change behavior.
