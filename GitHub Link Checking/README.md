@@ -1,71 +1,29 @@
 # GitHub Link Checking
 
-A GitHub Actions workflow that checks every external link in a repo's Markdown files on a schedule, opens an issue when links break, and blocks pull requests that add broken links. This repo runs it.
+A GitHub Actions workflow that checks external links in a repo's Markdown files. It runs a full check monthly and opens an issue when links break, and it checks only the changed files on pull requests, blocking merges that add broken links. This repo runs it.
 
 *Links verified October 2026.*
 
 ## How it works
 
-| Trigger | What happens |
-|---|---|
-| Monthly&nbsp;schedule | Checks all links; opens an issue listing any failures |
-| Manual&nbsp;run | Same as scheduled, from the "Run workflow" button in the Actions tab |
-| Pull&nbsp;request | Checks all links; fails the check if any are broken, blocking the merge |
+| Trigger | What it checks | On failure |
+|---|---|---|
+| Monthly&nbsp;schedule | Every link in every Markdown file | Opens an issue |
+| Manual&nbsp;run | Every link in every Markdown file | Opens an issue |
+| Pull&nbsp;request | Only links in Markdown files the pull request changed | Fails the check, blocking the merge |
+
+A pull request that changes no Markdown files passes without checking anything.
 
 ## Setup
 
-Create `.github/workflows/link-check.yml`:
-
-```yaml
-name: Check links
-
-on:
-  schedule:
-    - cron: "0 13 1 * *"   # 1st of every month, 13:00 UTC
-  workflow_dispatch:         # adds a "Run workflow" button in the Actions tab
-  pull_request:              # runs on every pull request, as a required check
-
-permissions:
-  contents: read
-  issues: write
-
-jobs:
-  check-links:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v5
-
-      - name: Check links
-        id: lychee
-        uses: lycheeverse/lychee-action@v2
-        with:
-          fail: false
-          args: >-
-            --no-progress
-            --scheme https --scheme http
-            --accept '200..=299,403,429'
-            --max-concurrency 4
-            --max-retries 2
-            --exclude 'acq\.osd\.mil'
-            './**/*.md'
-
-      - name: Open an issue if links are broken (scheduled and manual runs)
-        if: steps.lychee.outputs.exit_code != 0 && github.event_name != 'pull_request'
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh issue create --title "Broken links found $(date +%Y-%m-%d)" --body-file ./lychee/out.md
-
-      - name: Fail the check if links are broken (pull requests)
-        if: steps.lychee.outputs.exit_code != 0 && github.event_name == 'pull_request'
-        run: |
-          echo "Broken links found. See the job summary for details."
-          exit 1
-```
+The full workflow, with comments explaining each step, is in this repo at [`.github/workflows/link-check.yml`](../.github/workflows/link-check.yml). Copy it into the same path in your own repo.
 
 ## Settings explained
 
 | Setting | Why |
 |---|---|
+| `fetch-depth: 0` | Fetches full history so a pull request can be compared to main |
+| `git diff ... -- '*.md'` | Lists the Markdown files a pull request changed, using Git itself and no extra actions |
 | `--scheme https --scheme http` | Checks web links only. GitHub handles links between files in the repo |
 | `--accept '200..=299,403,429'` | Treats blocked (403) and rate-limited (429) responses as passing, to avoid false alarms from sites that block cloud servers |
 | `--max-concurrency 4` | Keeps request volume polite |
@@ -81,9 +39,15 @@ jobs:
 
 ## Practitioner notes
 
+**Check what changed, not everything.** Re-checking every link on every pull request multiplies traffic to the linked sites and lets an unrelated broken link block your edit. Full checks belong on the schedule.
+
+**Prefer built-in tools over extra actions.** Listing changed files with `git diff` avoids adding a third-party action. A popular changed-files action was compromised in a 2025 supply-chain attack.
+
+**Validate anything a pull request controls.** File names come from whoever opened the pull request. The workflow allows only simple file names before passing them to the link checker.
+
 **It's free for public repos.** Standard GitHub-hosted runners cost nothing in public repositories.
 
-**It sends real requests.** Every run visits every linked site. Keep concurrency low, and get sign-off if the links point at systems you don't own.
+**It sends real requests.** Every run visits every link it checks. Keep concurrency low, and get sign-off if the links point at systems you don't own.
 
 **Expect false positives.** Government sites often block cloud servers or use certificates the runner doesn't trust. Exclude those domains and check them manually.
 
