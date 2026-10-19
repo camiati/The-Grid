@@ -1,0 +1,19 @@
+# Dependabot configuration for The Grid
+#
+# Watches the actions used in .github/workflows/ (checkout, lychee)
+# and opens a pull request when a new version is released. Those pull
+# requests go through branch protection and the link checker like any
+# other change.
+
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"            # "/" covers workflows in .github/workflows
+    schedule:
+      interval: "monthly"     # matches the link checker's monthly rhythm
+    groups:
+      actions:                # bundle all action updates into one pull request
+        patterns:
+          - "*"
+    commit-message:
+      prefix: "deps"
