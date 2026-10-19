@@ -39,22 +39,40 @@ The full workflow, with comments explaining each step, is in this repo at [`.git
 
 ## Practitioner notes
 
-**Check what changed, not everything.** Re-checking every link on every pull request multiplies traffic to the linked sites and lets an unrelated broken link block your edit. Full checks belong on the schedule.
+**Check what changed, not everything.** 
+- Re-checking every link on every pull request multiplies traffic to the linked sites and lets an unrelated broken link block your edit.
+- Full checks belong on the schedule.
 
-**Prefer built-in tools over extra actions.** Listing changed files with `git diff` avoids adding a third-party action. A popular changed-files action was compromised in a 2025 supply-chain attack.
+**Prefer built-in tools over extra actions.**
+- Listing changed files with `git diff` avoids adding a third-party action.
+- A popular changed-files action was compromised in a 2025 supply-chain attack.
 
-**Validate anything a pull request controls.** File names come from whoever opened the pull request. The workflow allows only simple file names before passing them to the link checker.
+**Validate anything a pull request controls.**
+- File names come from whoever opened the pull request.
+- The workflow allows only simple file names before passing them to the link checker.
 
-**It's free for public repos.** Standard GitHub-hosted runners cost nothing in public repositories.
+**It's free for public repos.**
+- Standard GitHub-hosted runners cost nothing in public repositories.
 
-**It sends real requests.** Every run visits every link it checks. Keep concurrency low, and get sign-off if the links point at systems you don't own.
+**It sends real requests.**
+- Every run visits every link it checks.
+- Keep concurrency low, and get sign-off if the links point at systems you don't own.
 
-**Expect false positives.** Government sites often block cloud servers or use certificates the runner doesn't trust. Exclude those domains and check them manually.
+**Expect false positives.**
+- Government sites often block cloud servers or use certificates the runner doesn't trust.
+- Exclude those domains and check them manually.
 
-**Treat failures like findings.** Identify the root cause, fix it, re-run to verify, and document the resolution before closing. [Issue #1](https://github.com/camiati/The-Grid/issues/1) in this repo is a worked example.
+**Treat failures like findings.**
+- Identify the root cause, fix it, re-run to verify, and document the resolution before closing.
+- [Issue #1](https://github.com/camiati/The-Grid/issues/1) in this repo is a worked example.
 
-**Scheduled runs pause after 60 days of inactivity.** GitHub disables schedules in public repos with no recent commits. It emails you first, and re-enabling takes one click.
+**Scheduled runs pause after 60 days of inactivity.**
+- GitHub disables schedules in public repos with no recent commits.
+- It emails you first, and re-enabling takes one click.
 
-**Watch the repo for issues.** Bot-opened issues don't notify you automatically. Use **Watch → Custom → Issues**.
+**Watch the repo for issues.** 
+- Bot-opened issues don't notify you automatically.
+- Use **Watch → Custom → Issues**.
 
-**Control mapping:** continuous monitoring of published content (SOC 2 CC4.1, monitoring activities).
+**Control mapping:** 
+- Continuous monitoring of published content (SOC 2 CC4.1, monitoring activities).
