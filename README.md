@@ -45,6 +45,7 @@ Primary sources and practitioner notes for security and compliance frameworks.
 |---|---|
 | [Link&nbsp;Checking](./GitHub%20Link%20Checking/) | Scheduled and pull request checks for broken links |
 | [Branch&nbsp;Protection](./GitHub%20Branch%20Protection/) | Rulesets requiring pull requests and passing checks before merging |
+| [Dependabot](./GitHub%20Dependabot/) | Monthly pull requests to keep workflow actions up to date |
 
 
 ## Disclaimer
