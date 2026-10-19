@@ -37,12 +37,21 @@ No other setup is needed; Dependabot reads the file once it's on the default bra
 
 ## Practitioner notes
 
-**Version tags limit what Dependabot sees.** Actions referenced by a major tag like `@v2` already float to the newest `v2.x` release, so Dependabot only opens a pull request for a new major version. Pinning actions to exact commits gives tighter control, and Dependabot then updates those pins.
+**Version tags limit what Dependabot sees.** 
+- Actions referenced by a major tag like `@v2` already float to the newest `v2.x` release, so Dependabot only opens a pull request for a new major version.
+- Pinning actions to exact commits gives tighter control, and Dependabot then updates those pins.
 
-**Read the release notes before merging.** A major version can change behavior. Dependabot links the release notes in the pull request.
+**Read the release notes before merging.**
+- A major version can change behavior.
+- Dependabot links the release notes in the pull request.
 
-**Required checks still apply.** Dependabot can't bypass branch protection. Its pull requests wait for the same checks as yours.
+**Required checks still apply.** 
+- Dependabot can't bypass branch protection.
+- Its pull requests wait for the same checks as yours.
 
-**Version updates and security alerts are separate.** This file handles routine version updates. Dependabot alerts, which flag known vulnerabilities, are turned on separately in the repo's security settings.
+**Version updates and security alerts are separate.**
+- This file handles routine version updates.
+- Dependabot alerts, which flag known vulnerabilities, are turned on separately in the repo's security settings.
 
-**Control mapping:** vulnerability and patch management for third-party components (SOC 2 CC7.1; NIST SP 800-171 3.14.1, identifying and correcting flaws in a timely manner).
+**Control mapping:** 
+- vulnerability and patch management for third-party components (SOC 2 CC7.1; NIST SP 800-171 3.14.1, identifying and correcting flaws in a timely manner).
