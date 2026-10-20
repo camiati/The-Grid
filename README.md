@@ -48,6 +48,11 @@ Primary sources and practitioner notes for security and compliance frameworks.
 | [Dependabot](./GitHub%20Dependabot/) | Monthly pull requests to keep workflow actions up to date |
 | [Supply&nbsp;Chain&nbsp;Hardening](./GitHub%20Supply%20Chain%20Hardening/) | Pinned actions, enforced pinning, Dependabot cooldown, and secret scanning |
 
+## Maintenance
+
+| Process | Covers |
+|---|---|
+| [Content&nbsp;Reviews](./Content%20Reviews/) | Quarterly review of every page against current primary sources, with past reports |
 
 ## Disclaimer
 
