@@ -33,7 +33,7 @@ On July 13, 2026, the Department of War (DoD) suspended CMMC Phase 2, which woul
 | [DFARS Subpart 204.75](https://www.acquisition.gov/dfars/subpart-204.75-cybersecurity-maturity-model-certification) | How contracting officers apply CMMC |
 | [DFARS 252.204-7021](https://www.acquisition.gov/dfars/252.204-7021-contractor-compliance-cybersecurity-maturity-model-certification-level-requirements.) | CMMC contract clause: status, affirmations, flowdown |
 | [DFARS 252.204-7012](https://www.acquisition.gov/dfars/252.204-7012-safeguarding-covered-defense-information-and-cyber-incident-reporting.) | Safeguarding clause: NIST SP 800-171, 72-hour incident reporting, cloud requirements |
-| [DFARS Subpart 204.73](https://www.acquisition.gov/dfars/subpart-204.73-safeguarding-covered-defense-information-and-cyber-incident-reporting) | Policy behind 7012 and the SPRS assessment (252.204-7019/-7020) |
+| [DFARS Subpart 204.73](https://www.acquisition.gov/dfars/subpart-204.73-safeguarding-covered-defense-information-and-cyber-incident-reporting) | Policy behind 7012 and the SPRS assessment (252.204-7019; 7020 is now 252.240-7997) |
 
 ### Standards
 
@@ -94,7 +94,7 @@ On July 13, 2026, the Department of War (DoD) suspended CMMC Phase 2, which woul
 - Organizations get CMMC status. Tools don't.
 
 **Know whether you have FCI, CUI, or both.** 
-- Level 1 covers FCI under FAR 52.204-21.
+- Level 1 covers FCI under FAR 52.240-93 (formerly 52.204-21).
 - Over-scoping by assuming everything is CUI is common.
 - Check the CUI Registry and your contract clauses.
 

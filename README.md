@@ -25,7 +25,7 @@ Primary sources and practitioner notes for security and compliance frameworks.
 
 | Framework | Covers |
 |---|---|
-| [FedRAMP&nbsp;Rev5](./FedRAMP%20Rev5/) | The legacy FedRAMP path, built on NIST SP 800-53 baselines |
+| [FedRAMP&nbsp;Rev&nbsp;5](./FedRAMP%20Rev5/) | The legacy FedRAMP path, built on NIST SP 800-53 baselines |
 | [FedRAMP&nbsp;20x](./FedRAMP%2020x/) | The new FedRAMP path, built on Key Security Indicators and automated evidence |
 
 

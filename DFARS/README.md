@@ -26,6 +26,7 @@ Defense Federal Acquisition Regulation Supplement (DFARS)
 | [NIST&nbsp;SP&nbsp;800&#8209;171&nbsp;DoD&nbsp;Assessment&nbsp;Methodology](https://www.acq.osd.mil/asda/dpc/cp/cyber/docs/safeguarding/NIST-SP-800-171-Assessment-Methodology-Version-1.2.1-6.24.2020.pdf) | Legacy scoring method; CMMC self-assessments now score under 32 CFR 170.24 |
 | [DPC Cybersecurity: Safeguarding](https://www.acq.osd.mil/asda/dpc/cp/cyber/safeguarding.html) | DoD's page on 7012 and NIST SP 800-171 implementation |
 | [FedRAMP Moderate Equivalency memo](https://dodcio.defense.gov/Portals/0/Documents/Library/FEDRAMP-EquivalencyCloudServiceProviders.pdf) | DoD CIO, December 2023: what "equivalent" means under 7012 |
+| [Proposed&nbsp;FOCI&nbsp;rule](https://www.federalregister.gov/d/2026-09067) | May 2026 proposed DFARS rule extending FOCI review to unclassified contracts over $5 million |
 
 ### Incident reporting
 
@@ -49,7 +50,7 @@ Defense Federal Acquisition Regulation Supplement (DFARS)
 - The version in your contract governs.
 
 **Your SPRS score is a representation.** 
-- A Basic Assessment is self-scored from 110 down, and can go negative.
+- Self-assessments are scored from 110 down under 32 CFR 170.24, and can go negative.
 - Submitting it is a statement to the government, with the same False Claims Act exposure as a CMMC affirmation.
 
 **DIBNet is gone.** 
@@ -76,3 +77,7 @@ Defense Federal Acquisition Regulation Supplement (DFARS)
 **7012 cloud and 239-7010 cloud are different problems.** 
 - 7012 governs cloud you use to store CUI.
 - 239-7010 governs cloud you operate for DoD, and brings in DoD's Cloud Computing Security Requirements Guide.
+
+**FOCI review may reach unclassified contracts.**
+- A May 7, 2026 proposed rule would extend FOCI disclosure and possible mitigation to DoD contracts and subcontracts over $5 million, excluding commercial products and services.
+- Comments closed July 6, 2026; the final rule is pending. See the NISPOM page for how FOCI works under classified contracts today.
