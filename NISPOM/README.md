@@ -49,6 +49,7 @@ The National Industrial Security Program Operating Manual (NISPOM)
 **Fundraising can trigger FOCI.**
 - New investors, ownership changes, and board changes can be changed conditions requiring a report and possibly FOCI review.
 - Bring the FSO in before a deal closes, not after.
+- A May 2026 proposed DFARS rule would extend FOCI review to unclassified DoD contracts over $5 million. See the DFARS page.
 
 **NISPOM is for classified, not CUI.**
 - The rule states CUI compliance is outside the NISP's scope.
